@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>反诈警示模拟演示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 20px;
+        }
+        .card {
+            max-width: 600px;
+            width: 100%;
+            background: #fff0f0;
+            border-radius: 48px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 1px solid #ffaaaa;
+            animation: pulse 1s ease-in-out;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.96); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .header {
+            background: #b91c1c;
+            padding: 24px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            background: #ffcc00;
+            color: #7c2d12;
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 6px 14px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+        .content {
+            padding: 32px 28px;
+        }
+        .warning-box {
+            background: #ffebeb;
+            border-left: 8px solid #dc2626;
+            padding: 20px;
+            border-radius: 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .warning-box p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b91c1c;
+        }
+        .simulation-note {
+            background: #fef9c3;
+            border-radius: 20px;
+            padding: 18px;
+            text-align: center;
+            border: 1px dashed #ca8a04;
+            margin: 25px 0;
+        }
+        .simulation-note p {
+            color: #854d0e;
+            font-weight: 500;
+        }
+        .tips {
+            background: #e6f7e6;
+            padding: 18px;
+            border-radius: 24px;
+            margin-top: 25px;
+        }
+        .btn {
+            display: inline-block;
+            background: #166534;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 40px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.2s;
+        }
+        .btn:hover {
+            background: #14532d;
+            transform: scale(1.02);
+        }
+        hr {
+            margin: 24px 0;
+            border: 0;
+            height: 1px;
+            background: #ffc4c4;
+        }
+        .footer {
+            font-size: 0.75rem;
+            text-align: center;
+            color: #6b7280;
+            padding: 20px;
+            border-top: 1px solid #ffe0e0;
+            background: #fff8f8;
+        }
+        @media (max-width: 500px) {
+            .content { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <h1>
+            ⚠️ 反诈模拟演示 ⚠️
+            <span class="badge">安全教学 · 非真实攻击</span>
+        </h1>
+    </div>
+    <div class="content">
+        <div class="warning-box">
+            <p>⚠️ 请不要随意扫描来源不明的二维码 ⚠️</p>
+        </div>
+
+        <div class="simulation-note">
+            <p>🔐 <strong>【本页面为反诈宣传模拟演示】</strong> 🔐</p>
+            <p style="margin-top: 8px;">✅ 没有获取任何你的隐私信息<br>
+            ✅ 不会造成任何经济损失<br>
+            ✅ 仅用于教育提醒“绝不扫描陌生二维码”</p>
+        </div>
+
+        <div class="tips">
+            <p>📢 <strong>真实诈骗二维码的常见套路：</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.5;">
+                <li>❌ 要求输入支付密码 / 短信验证码</li>
+                <li>❌ 诱导下载不明APP或点击钓鱼链接</li>
+                <li>❌ 伪装成“快递领取”“交通违章”“社保认证”</li>
+                <li>❌ 声称“扫码领红包”“免费送皮肤”</li>
+            </ul>
+            <p style="margin-top: 16px; font-weight: bold;">🔔 请牢记：<span style="background: #ffecb3; padding: 2px 8px; border-radius: 20px;">不扫陌生码，不点陌生链接，不透漏验证码！</span></p>
+            <a href="https://www.china-deception.com/" target="_blank" rel="noopener noreferrer" class="btn">📞 国家反诈中心官方学习入口</a>
+        </div>
+        <hr>
+        <p style="font-size: 0.85rem; color: #4b5563;">* 本演示页面由反诈志愿者制作，仅用于安全宣传。如遇可疑二维码，请立即拨打 96110 咨询。</p>
+    </div>
+    <div class="footer">
+        制作日期：2025年 · 版本 3.0 (温和提醒版)<br>
+        模拟演示，请勿传播至公开网络
+    </div>
+</div>
+</body>
+</html>
